@@ -1,0 +1,51 @@
+body{
+    background-image: url(img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+img{
+    width: 45%;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left:0%;
+    right:0;
+    margin: auto;
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+span{
+    font-family: Verdana;
+    font-size: 26px;
+    color: transparent;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #f00,#f00,#0ff,#0f0,#00f);
+    -webkit-background-clip: text;
+    -webkit-user-select: none;
+    animation: animate 20s linear infinite;
+    background-size:1000%
+}
+@keyframes animate
+{
+    0% 
+    {
+        background-position: 0% 100%;
+    }
+    50%
+    {
+        background-position: 100% 0%;
+    }
+    100%
+    {
+        background-position: 0% 100%;
+    }
+}
